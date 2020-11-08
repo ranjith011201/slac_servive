@@ -180,7 +180,7 @@ class _CamScreenState extends State<CamScreen> {
               margin: EdgeInsets.only(left: 40, right: 40),
               child: TextField(
                 controller: postsProvider.name,
-                obscureText: true,
+                obscureText: false,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 decoration: InputDecoration(
                   hintText: "Name",
@@ -202,7 +202,7 @@ class _CamScreenState extends State<CamScreen> {
               margin: EdgeInsets.only(left: 40, right: 40),
               child: TextField(
                 controller: postsProvider.title,
-                obscureText: true,
+                obscureText: false,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 decoration: InputDecoration(
                   hintText: "Title",
@@ -224,7 +224,7 @@ class _CamScreenState extends State<CamScreen> {
               margin: EdgeInsets.only(left: 40, right: 40),
               child: TextField(
                 controller: postsProvider.description,
-                obscureText: true,
+                obscureText: false,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 decoration: InputDecoration(
                   hintText: "Description",
@@ -248,7 +248,7 @@ class _CamScreenState extends State<CamScreen> {
               margin: EdgeInsets.only(left: 40, right: 40),
               child: TextField(
                 controller: postsProvider.address,
-                obscureText: true,
+                obscureText: false,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 decoration: InputDecoration(
                   hintText: "Address",
@@ -270,7 +270,7 @@ class _CamScreenState extends State<CamScreen> {
               margin: EdgeInsets.only(left: 40, right: 40),
               child: TextField(
                 controller: postsProvider.pincode,
-                obscureText: true,
+                obscureText: false,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(

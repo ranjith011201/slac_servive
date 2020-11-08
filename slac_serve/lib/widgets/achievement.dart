@@ -101,8 +101,10 @@ class AchievementWidget extends StatelessWidget {
                       onTap: () {
                         sharePost(
                             text: postsProvider.postsByAchievement[i].title,
-                            description: postsProvider.posts[i].description,
-                            imageUrl: postsProvider.posts[i].imageUrl);
+                            description:
+                                postsProvider.postsByAchievement[i].description,
+                            imageUrl:
+                                postsProvider.postsByAchievement[i].imageUrl);
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),

@@ -54,15 +54,15 @@ class _HomeFeedState extends State<HomeFeed> {
                 ),
               )
             : null,
-        actions: _selectedPageIndex != 4
-            ? [
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 8, horizontal: 14),
-                  child: Icon(Icons.chat),
-                ),
-              ]
-            : null,
+        // actions: _selectedPageIndex != 4
+        //     ? [
+        //         Padding(
+        //           padding:
+        //               const EdgeInsets.symmetric(vertical: 8, horizontal: 14),
+        //           child: Icon(Icons.chat),
+        //         ),
+        //       ]
+        //     : null,
       ),
       backgroundColor: Colors.black,
       bottomNavigationBar: BottomNavigationBar(

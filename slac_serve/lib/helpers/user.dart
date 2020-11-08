@@ -16,22 +16,6 @@ class UserServices {
     _firestore.collection(collection).doc(values['id']).update(values);
   }
 
-  // void addToCart({String userId, CartItemModel cartItem}) {
-  //   print("THE USER ID IS: $userId");
-  //   print("cart items are: ${cartItem.toString()}");
-  //   _firestore.collection(collection).doc(userId).update({
-  //     "cart": FieldValue.arrayUnion([cartItem.toMap()])
-  //   });
-  // }
-
-  // void removeFromCart({String userId, CartItemModel cartItem}) {
-  //   print("THE USER ID IS: $userId");
-  //   print("cart items are: ${cartItem.toString()}");
-  //   _firestore.collection(collection).doc(userId).update({
-  //     "cart": FieldValue.arrayRemove([cartItem.toMap()])
-  //   });
-  // }
-
   Future<UserModel> getUserById(String id) =>
       _firestore.collection(collection).doc(id).get().then((doc) {
         return UserModel.fromSnapshot(doc);

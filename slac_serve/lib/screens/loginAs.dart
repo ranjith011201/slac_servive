@@ -11,15 +11,6 @@ class RegisterAs extends StatelessWidget {
       body: Container(
         child: Stack(
           children: [
-            // Container(
-            //   // decoration: BoxDecoration(
-            //   //   image: DecorationImage(
-            //   //       alignment: FractionalOffset.centerRight,
-            //   //       image: NetworkImage(
-            //   //           "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ13H5DS5jnS8FwIi2gzSNS3PqMrLxWbif-HA&usqp=CAU"),
-            //   //       fit: BoxFit.cover),
-            //   // ),
-            // ),
             Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [

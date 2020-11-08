@@ -62,6 +62,7 @@ class PostsProvider with ChangeNotifier {
   Future loadPostsByCategory({String categoryName}) async {
     switch (categoryName) {
       case 'Contribution':
+        print('contribution called');
         postsByContribution =
             await _postsServices.getPostsByCategory(id: categoryName);
         notifyListeners();
@@ -82,30 +83,4 @@ class PostsProvider with ChangeNotifier {
         notifyListeners();
     }
   }
-
-//  likeDislikeProduct({String userId, ProductModel product, bool liked})async{
-//    if(liked){
-//      if(product.userLikes.remove(userId)){
-//        _productServices.likeOrDislikeProduct(id: product.id, userLikes: product.userLikes);
-//      }else{
-//        print("THE USER WA NOT REMOVED");
-//      }
-//    }else{
-//
-//      product.userLikes.add(userId);
-//        _productServices.likeOrDislikeProduct(id: product.id, userLikes: product.userLikes);
-//
-//
-//      }
-//  }
-
-  // Future search({String productName}) async {
-  //   productsSearched =
-  //       await _productServices.searchProducts(productName: productName);
-  //   print("THE NUMBER OF PRODUCTS DETECTED IS: ${productsSearched.length}");
-  //   print("THE NUMBER OF PRODUCTS DETECTED IS: ${productsSearched.length}");
-  //   print("THE NUMBER OF PRODUCTS DETECTED IS: ${productsSearched.length}");
-
-  //   notifyListeners();
-  // }
 }
